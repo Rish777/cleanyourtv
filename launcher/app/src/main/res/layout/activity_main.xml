@@ -127,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFFFF"
-            android:textSize="48sp"
+            android:textSize="38sp"
             android:fontFamily="@string/font_light"
             android:letterSpacing="-0.02"
             android:includeFontPadding="false"
@@ -139,19 +139,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:singleLine="true"
             android:textColor="#B3FFFFFF"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:fontFamily="@string/font_light"
             android:visibility="gone" />
 
         <LinearLayout
             android:id="@+id/heroDots"
             android:layout_width="wrap_content"
-            android:layout_height="6dp"
+            android:layout_height="5dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal"
             android:visibility="gone" />
     </LinearLayout>
@@ -194,7 +194,7 @@
                     android:ellipsize="end"
                     android:layout_marginStart="4dp"
                     android:textColor="#8CFFFFFF"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:fontFamily="@string/font_medium"
                     android:letterSpacing="0.22"
                     android:textAllCaps="true" />
@@ -212,9 +212,9 @@
                         android:format12Hour="h:mm"
                         android:format24Hour="HH:mm"
                         android:textColor="#FFFFFFFF"
-                        android:textSize="52sp"
+                        android:textSize="40sp"
                         android:fontFamily="@string/font_light"
-                        android:letterSpacing="-0.04"
+                        android:letterSpacing="-0.03"
                         android:fontFeatureSettings="tnum"
                         android:includeFontPadding="false" />
 
@@ -224,11 +224,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
                         android:layout_gravity="bottom"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="6dp"
                         android:format12Hour="a"
                         android:format24Hour=""
                         android:textColor="#B3FFFFFF"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:fontFamily="@string/font_medium"
                         android:letterSpacing="0.08"
                         android:textAllCaps="true" />
@@ -236,11 +236,11 @@
                     <View
                         android:id="@+id/clockDivider"
                         android:layout_width="1dp"
-                        android:layout_height="26dp"
+                        android:layout_height="20dp"
                         android:layout_gravity="bottom"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="6dp"
                         android:background="#33FFFFFF" />
 
                     <LinearLayout
@@ -248,7 +248,7 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:layout_marginBottom="9dp"
+                        android:layout_marginBottom="6dp"
                         android:orientation="vertical">
 
                         <!-- Shamsi date ("27 Mehr 1405"), shown when shamsi_date is on. -->
@@ -278,7 +278,7 @@
                             android:format12Hour="@string/date_format_home"
                             android:format24Hour="@string/date_format_home"
                             android:textColor="#A6FFFFFF"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:fontFamily="@string/font_regular"
                             android:letterSpacing="0.14"
                             android:textAllCaps="true" />
@@ -348,6 +348,15 @@
                     android:ellipsize="end"
                     android:text="@string/wifi"
                     android:drawableStart="@drawable/ic_wifi"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
+                    android:id="@+id/btnBluetooth"
+                    style="@style/TopButton"
+                    android:singleLine="true"
+                    android:text="Bluetooth"
+                    android:contentDescription="Bluetooth"
+                    android:drawableStart="@drawable/ic_bluetooth"
                     android:nextFocusDown="@+id/grid" />
 
                 <TextView
